@@ -49,7 +49,7 @@ class App extends Component {
 
 
   filterBooks(input) {
-    this.state.Books.filter((input) => {
+    this.state.books.filter((input) => {
     })
     let filteredBooks = this.state.books
     return filteredBooks
@@ -66,9 +66,15 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <BookList books={this.state.books} addToShelf={this.addToShelf} />
-        <Shelf shelf={this.state.shelf} clearShelf={this.clearShelf} />
-        <SearchBar filterBooks = {this.filterBooks} reset = {this.reset}/>
+        <SearchBar 
+        filterBooks = {this.filterBooks} 
+        reset = {this.reset}/>
+        <BookList 
+        books={this.state.books} 
+        addToShelf={this.addToShelf} />
+        <Shelf 
+        shelf={this.state.shelf} 
+        clearShelf={this.clearShelf} />
       </div >
     )
   }

@@ -67,7 +67,9 @@ let ralph = new NPC('Ralph', 'human', 'Niceland', "I'm gonna wreck it!")
 */
 
 //CODE HERE
-
+let ralphsInfo = ralph.getInfo()
+let ralphsDialogue = ralph.dialogue()
+let ralphsLocation = ralph.location
 //////////////////PROBLEM 3////////////////////
 
 /*
@@ -173,3 +175,6 @@ class Hero extends Player {
 
 //CODE HERE
 let fireSpitter = new Hero('Fire Spitter', 'dragon', 5000, 5000)
+fireSpitter.addSuperPower('spitting fire') 
+fireSpitter.addSuperPower('explosive') 
+fireSpitter.addSuperPower('fire ball') 
